@@ -1,0 +1,208 @@
+header{
+    float: left;
+    background-image: url("./imagem1.jpg");
+    width: 100%;
+    height: 100%;
+}
+header p {
+    float: center;
+    color: #e3dcd8;
+    
+}
+header a, footer a{
+    color:#e3dcd8;
+    text-decoration:none;
+    /*font-weight: bold;*/
+    float: left;
+}
+header a:hover{
+    color: #e3dcd8;
+    /*background-color:maroon;*/
+    text-decoration:none;
+    /*padding: 5px;*/
+}
+/*#logo{
+    float: left;
+    width: 100%;
+    height: 20%;
+    display: block;
+    border-radius: 32px;
+}*/
+nav{
+    float: left;
+    padding: 20px;
+}
+header ul, footer ul {
+    list-style: none;
+}
+header ul > li, footer ul > li{
+    display: inline-block;
+    /*float: left;*/
+    padding: 10px;;
+}
+#tituloprincipal {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #e3dcd8;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    position:relative;
+    right: 160px;
+}
+/*#tituloprincipal::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    margin: 10px auto 0;
+}*/
+/* Estilizando conteúdo principal */
+.conteudoPrincipal p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.conteudoPrincipal h1{
+    text-align: center;
+}
+/* Estilizando o footer */
+footer{
+    height: 100px;
+    /*background-color: #13193a;*/
+    background-image: url("./imagem1.jpg");
+    color: #e3dcd8;
+    text-align: right;
+    padding: 5px;
+    clear: both;
+}
+/* Estilizando os cards */
+
+
+
+main.cards{
+    background: rgb(246, 247, 199);
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+    padding: 32px
+
+    
+}
+
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 280px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 350px;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilização do Card Facebook */
+
+main.cards section.card#facebook{
+    box-shadow: 20px 20px 50px -30px #8aa4df;
+}
+
+main.cards section.card#facebook button{
+    background: linear-gradient(to right, #1c4199, #5f7abb);
+}
+
+/* Estilização do Card Twitter/X */
+
+main.cards section.card#twitter{
+    box-shadow: 20px 20px 50px -30px #ceced1;
+}
+
+main.cards section.card#twitter button{
+    background: linear-gradient(to right, #000000, #adaeb1);
+}
+
+/* Estilização do Card Instagram */
+
+main.cards section.card#instagram{
+    box-shadow: 20px 20px 50px -30px #b981da;
+}
+
+main.cards section.card#instagram button{
+    background: linear-gradient(to right, #dd2a7b, #8134af);
+}
+
+/* Estilizando para Mobile */
+
+@media screen and (max-width: 720px){
+
+    main.cards{
+        flex-direction: column;
+        height: auto;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button{
+        font-size: 70%;
+    }
+    
+}
