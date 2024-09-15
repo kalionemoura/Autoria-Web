@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+
+
+/* Estilização do Menu - inicio*/
+@media only screen and (max-width: 430px){
+
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        list-style: none;
+    }
+    li a{
+        display: block; /* Toda área do link fica clicável */
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li a.active{
+        background-color: #5936ac;
+        color: white;
+    }
+    li a:hover:not(.active){
+        background-color: #c0dd9e;
+        color: white;
+    }    
+   
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    list-style: none;
+}
+li a{
+    display: block; /* Toda área do link fica clicável */
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active{
+    background-color: #4caf50;
+    color: white;
+}
+li a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+/* Estilização do Menu - fim*/
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 16px;
+}
+
