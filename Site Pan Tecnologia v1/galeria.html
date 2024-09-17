@@ -1,69 +1,79 @@
 <!doctype html>
 <html lang="pt" data-bs-theme="auto">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contato</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Galeria</title>
+        <!-- css da pagina -->
+        <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link  href="assets/dist/css/galeria.css" rel="stylesheet">
+        <style>
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .fixed-top{
+            position: relative;
+            margin-bottom: 16px; 
+        }
+        </style>
 
-<!-- css da pagina -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link  href="assets/dist/css/galeria.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-<!-- parte superior da pagina -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Pan Tecnologia</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active" href="sobre.html">Sobre</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="true" href="contato.html">Contato</a>
-        </li>
-    </ul>
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-    </form>
-    </div>
-</div>
-</nav>
-</header>
-    <!-- Parte da galeria -->
-        <div class="galeria">
-            <a target="_blank" href="imagens/imagem1.jpg">
-            <img src="imagens/imagem1.jpg" alt="Figura 1">
-            </a>
-            <div class="desc">imagem 1</div>
-        </div>
-        <div class="galeria">
-            <a target="_blank" href="imagens/imagem2.jpg">
-            <img src="imagens/imagem2.jpg" alt="Figura 2">
-            </a>
-            <div class="desc">imagem 2!</div>
-        </div>
-        <div class="galeria">
-            <a target="_blank" href="imagens/imagem3.jpg">
-            <img src="imagens/imagem3.jpg" alt="Figura 3">
-            </a>
-        <div class="desc">imagem 3!</div>
-        </div> 
-<!-- FOOTER -->
-<footer class="container">
-<p class="float-end"><a href="#">Topo</a></p>
-<p>&copy; 2018–2024 Company, Inc. &middot; <a href="#">Pan Tecnologia</a> &middot; <a href="#">Termos</a></p>
-</footer>
-</main>
-</body>
+    </head>
+    <body>
+        <header>
+        <!-- parte superior da pagina -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Pan Tecnologia</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Parte da galeria -->
+            <div class="galeria">
+                <a target="_blank" href="imagens/imagem1.jpg">
+                <img src="assets/imagens/imagem1.jpg" alt="Figura 1">
+                </a>
+                <div class="desc">imagem 1</div>
+            </div>
+            <div class="galeria">
+                <a target="_blank" href="imagens/imagem2.jpg">
+                <img src="assets/imagens/imagem2.jpg" alt="Figura 2">
+                </a>
+                <div class="desc">imagem 2!</div>
+            </div>
+            <div class="galeria">
+                <a target="_blank" href="imagens/imagem3.jpg">
+                <img src="assets/imagens/imagem3.jpg" alt="Figura 3">
+                </a>
+                <div class="desc">imagem 3!</div>
+            </div> 
+        <!-- FOOTER -->
+            <footer class="container">
+                <p class="float-end"><a href="#">Topo</a></p>
+                <p>&copy; 2018–2024 Company, Inc. &middot; <a href="#">Pan Tecnologia</a> &middot; <a href="#">Termos</a></p>
+            </footer>
+        </main>
+    </body>
 </html>
