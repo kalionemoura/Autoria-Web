@@ -1,0 +1,118 @@
+
+/* Estilizando os cards */
+
+main.cards{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+    padding: 60px
+
+    
+}
+
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 280px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 350px;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilização do Card Facebook */
+
+main.cards section.card#facebook{
+    box-shadow: 20px 20px 50px -30px #8aa4df;
+}
+
+main.cards section.card#facebook button{
+    background: linear-gradient(to right, #1c4199, #5f7abb);
+}
+
+/* Estilização do Card Twitter/X */
+
+main.cards section.card#twitter{
+    box-shadow: 20px 20px 50px -30px #ceced1;
+}
+
+main.cards section.card#twitter button{
+    background: linear-gradient(to right, #000000, #adaeb1);
+}
+
+/* Estilização do Card Instagram */
+
+main.cards section.card#instagram{
+    box-shadow: 20px 20px 50px -30px #b981da;
+}
+
+main.cards section.card#instagram button{
+    background: linear-gradient(to right, #dd2a7b, #8134af);
+}
+
+/* Estilizando para Mobile */
+
+@media screen and (max-width: 720px){
+
+    main.cards{
+        flex-direction: column;
+        height: auto;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button{
+        font-size: 70%;
+    }
+    
+}
+}

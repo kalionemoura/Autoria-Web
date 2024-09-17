@@ -685,7 +685,6 @@ progress {
     max-width: 100%;
     height: auto
 }
-
 .img-thumbnail {
     padding: .25rem;
     background-color: var(--bs-body-bg);
@@ -694,7 +693,6 @@ progress {
     max-width: 100%;
     height: auto
 }
-
 .figure {
     display: inline-block
 }
@@ -9497,7 +9495,7 @@ textarea.form-control-lg {
 }
 
 .rounded-circle {
-    /* border-radius:50%!important; */
+     border-radius:50%!important;
 }
 
 .rounded-pill {
