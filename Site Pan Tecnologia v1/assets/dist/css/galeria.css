@@ -1,0 +1,19 @@
+div.galeria{
+    margin:10px;
+    border:1px solid #ccc;
+    float:left;
+    width: 350px;
+    transition: all 0.3s;
+}
+div.galeria:hover {
+    transform: scale(1.1);
+}
+div.galeria img{
+    width: 350px;
+    height: 350px;
+}
+div.desc{
+    padding: 10px;
+    text-align: center;
+} 
+
